@@ -1,0 +1,24 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keyword"
+  ],
+  "author": "Wenting Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

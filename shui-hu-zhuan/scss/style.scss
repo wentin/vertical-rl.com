@@ -1,0 +1,225 @@
+$acumin: "acumin-pro-semi-condensed", sans-serif;
+$source-han: "source-han-sans-simplified-c", sans-serif;
+$fangsong: "adobe-fangsong-std", serif;
+$kaiti: "adobe-kaiti-std", serif;
+$blue: #3F30D7;
+$yellow: #F4F478;
+$red: #D73075;
+$cyan: #A2FAC6;
+$fuchsia: #FFC300;
+$white: white;
+$black: black;
+
+body {
+  font-family: $kaiti;
+  font-size: 16px;
+  line-height: 32px;
+  overflow-y: hidden;
+}
+
+.vertical-scroll-page {
+  height: 100vh;
+  display: inline-flex;
+  flex-flow: row-reverse nowrap;
+  
+  .screen.cover {
+    width: 70vw;
+    min-width: 720px;
+    flex-shrink: 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: $blue;
+    border-left: solid 2px $white;
+    color: $white;
+    .title {
+      writing-mode: vertical-rl;
+      font-size: 110px;
+      line-height: 220px;
+      top: 60px;
+      bottom: 60px;
+      position: absolute;
+      left: 0px;
+      right: 0;
+      width: 220px;
+      margin: auto;
+      border: solid 6px $white;
+      text-align: center;
+      letter-spacing: 20px;
+      padding-top: 26px;
+      span {    
+        position: absolute;
+        height: 110px;
+        top: 0;
+        right: -340px;
+        line-height: 450px;
+      }
+      h4 { 
+        position: absolute;
+        bottom: -10px;
+        font-size: 34px;
+        line-height: 50px;
+        width: 50px;
+        letter-spacing: 2px;
+        &.author {
+          right: -140px;
+        }
+        &.time {
+          left: -140px;
+        }
+      }
+    }
+  }
+  .screen.summary {
+    width: 30vw;
+    min-width: 200px;
+    border-top: solid 60px $blue;
+    border-bottom: solid 60px $blue;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: $blue;
+    color: $white;
+    font-family: $fangsong;
+    display: flex;
+    flex-shrink: 0;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      writing-mode: vertical-rl;
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      height: 40vh;
+    }
+  }
+  .screen.poetry {
+    background-color: $yellow;
+    writing-mode: vertical-rl;
+    padding: 60px 100px;
+    font-size: 30px;
+    line-height: 1.6;
+  }
+  .screen.role {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    &.antagonist {
+      background-color: $black;
+      color: $cyan;
+      .about {
+        border-color: currentColor;
+      }
+      .info {
+        .row {
+          color: $cyan;
+          .th {
+            background-color: $cyan;
+            color: $black;
+            border-color: $cyan;
+          }
+        }
+        .row2 {
+          color: $fuchsia;
+          .th {
+            background-color: $fuchsia;
+            color: $black;
+          }
+        }
+      }
+    }
+    .about {
+      margin: 0 60px;
+      writing-mode: vertical-rl;
+      font-size: 30px;
+      line-height: 1.6;
+      border-top: solid 20px $black;
+      border-bottom: solid 20px $black;
+      padding: 40px 40px;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: 100vh;
+      width: 400px;
+      box-sizing: border-box;
+      border: solid 60px transparent;
+      font-size: 25px;
+      font-family: $fangsong;
+      letter-spacing: 0.4em;
+      .row {
+        width: 280px;
+        height: 100%;
+        color: $blue;
+        border-top: solid 2px currentColor;
+        border-left: solid 2px currentColor;
+        box-sizing: border-box;
+        writing-mode: vertical-rl;
+        flex-grow: 2;
+        &.color {
+          .th {
+            background-color: transparent;
+            color: currentColor;
+          }
+        }
+        .th {
+          width: 40px;
+          line-height: 36px;
+          background-color: $blue;
+          color: $white;
+          border-left: solid $blue 2px;
+          border-right: solid $blue 2px;
+          padding-top: 20px;
+          box-sizing: border-box;
+        }
+        .td {
+          padding-top: 20px;
+          width: 100px;
+          color: currentColor;
+          box-sizing: border-box;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      .row2 {
+        width: 280px;
+        height: 100px;
+        flex-shrink: 0;
+        text-align: center;
+        color: $red;
+        .th {
+          height: 40px;
+          line-height: 40px;
+          background-color: $red;
+          color: $white;
+        }
+        .td {
+          line-height: 60px;
+          color: currentColor;
+          border-left: solid 2px currentColor;
+          border-right: solid 2px currentColor;
+          border-bottom: solid 2px currentColor;
+        }
+      }
+    }
+    .illustration {
+      min-width: 200px;
+      border: solid 60px transparent;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+  .screen.separator {
+    width: 0;
+    height: 0;
+    border-top: solid 50vh $black;
+    border-left: solid 160px $black;
+    border-bottom: solid 50vh transparent;
+    border-right: solid 160px transparent;
+  }
+}

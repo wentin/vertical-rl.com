@@ -1,0 +1,550 @@
+body {
+  font-family: "source-han-sans-simplified-c", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  overflow-y: hidden;
+}
+
+.vertical-scroll-page {
+  height: 100vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-flow: row-reverse nowrap;
+      flex-flow: row-reverse nowrap;
+}
+.vertical-scroll-page .screen.intro {
+  width: 100vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-color: #2C3E50;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotation1 {
+  from {
+    -webkit-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+  }
+  to {
+    -webkit-transform: rotate(210deg);
+            transform: rotate(210deg);
+  }
+}
+@keyframes rotation1 {
+  from {
+    -webkit-transform: rotate(-150deg);
+            transform: rotate(-150deg);
+  }
+  to {
+    -webkit-transform: rotate(210deg);
+            transform: rotate(210deg);
+  }
+}
+@-webkit-keyframes rotation2 {
+  from {
+    -webkit-transform: rotate(-240deg);
+            transform: rotate(-240deg);
+  }
+  to {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+}
+@keyframes rotation2 {
+  from {
+    -webkit-transform: rotate(-240deg);
+            transform: rotate(-240deg);
+  }
+  to {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+}
+.vertical-scroll-page .screen.intro .images {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.vertical-scroll-page .screen.intro .images img {
+  border: solid 4px black;
+}
+.vertical-scroll-page .screen.intro .title {
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 200px;
+  color: hsl(calc(360 * var(--mouse-x, 0.25)), 80%, 50%);
+  mix-blend-mode: color-dodge;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  -webkit-animation: rotation 6s linear infinite;
+          animation: rotation 6s linear infinite;
+}
+.vertical-scroll-page .screen.intro .title span {
+  position: absolute;
+}
+.vertical-scroll-page .screen.intro .title span spin {
+  position: absolute;
+}
+.vertical-scroll-page .screen.intro .title span.l1 {
+  left: 150px;
+  top: -30px;
+  font-size: 200px;
+}
+.vertical-scroll-page .screen.intro .title span.l1 spin {
+  -webkit-animation: rotation 4s linear infinite;
+          animation: rotation 4s linear infinite;
+}
+.vertical-scroll-page .screen.intro .title span.l2 {
+  bottom: 210px;
+  right: 210px;
+  font-size: 180px;
+}
+.vertical-scroll-page .screen.intro .title span.l2 spin {
+  -webkit-animation: rotation1 4s linear infinite;
+          animation: rotation1 4s linear infinite;
+}
+.vertical-scroll-page .screen.intro .title span.l3 {
+  bottom: 210px;
+  left: 30px;
+  font-size: 150px;
+}
+.vertical-scroll-page .screen.intro .title span.l3 spin {
+  -webkit-animation: rotation2 4s linear infinite;
+          animation: rotation2 4s linear infinite;
+}
+.vertical-scroll-page .screen.intro .s1, .vertical-scroll-page .screen.intro .s2, .vertical-scroll-page .screen.intro .s3, .vertical-scroll-page .screen.intro .s4 {
+  position: absolute;
+}
+.vertical-scroll-page .screen.intro .s1 {
+  top: -100px;
+  left: -180px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+.vertical-scroll-page .screen.intro .s2 {
+  top: -30px;
+  right: -260px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+.vertical-scroll-page .screen.intro .s3 {
+  bottom: -10px;
+  left: -120px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.vertical-scroll-page .screen.intro .s4 {
+  bottom: -50px;
+  right: -290px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.vertical-scroll-page .screen.intro .author {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 1.2;
+  text-align: center;
+  height: 100%;
+  padding-top: 82px;
+  position: absolute;
+  left: 144px;
+}
+.vertical-scroll-page .screen.intro .author span {
+  font-size: 45px;
+  letter-spacing: 10px;
+  color: white;
+  background-color: black;
+  border: solid 4px black;
+  padding: 30px 0 16px 0;
+}
+.vertical-scroll-page .screen.intro .author.subtitle {
+  left: 40px;
+  padding-top: 0;
+}
+.vertical-scroll-page .screen.intro .author.subtitle span {
+  color: black;
+  background-color: white;
+}
+.vertical-scroll-page .screen.parallax {
+  width: 1180px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 50px;
+  position: relative;
+  overflow: hidden;
+  background: #edf4f6;
+}
+.vertical-scroll-page .screen.parallax .pictures {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 968px;
+  height: 856px;
+}
+.vertical-scroll-page .screen.parallax .pictures .front, .vertical-scroll-page .screen.parallax .pictures .middle, .vertical-scroll-page .screen.parallax .pictures .back {
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+  background-size: cover;
+}
+.vertical-scroll-page .screen.parallax .pictures .back {
+  top: 100px;
+  left: 80px;
+  -webkit-transform: translate3d(calc( ( var(--mouse-x, 0.5) - 1 ) * 20px), calc( ( var(--mouse-y, 0.5) - 1 ) * 20px), 0px);
+          transform: translate3d(calc( ( var(--mouse-x, 0.5) - 1 ) * 20px), calc( ( var(--mouse-y, 0.5) - 1 ) * 20px), 0px);
+  width: 334px;
+  height: 249px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/back.png");
+}
+.vertical-scroll-page .screen.parallax .pictures .middle {
+  top: 177px;
+  left: 152px;
+  -webkit-transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 10px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 10px), 0px);
+          transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 10px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 10px), 0px);
+  width: 629px;
+  height: 424px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/middle.png");
+}
+.vertical-scroll-page .screen.parallax .pictures .front {
+  top: 408px;
+  left: 450px;
+  -webkit-transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 40px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 40px), 0px);
+          transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 40px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 40px), 0px);
+  width: 401px;
+  height: 384px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/front.png");
+}
+.vertical-scroll-page .screen.parallax .characters {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+}
+.vertical-scroll-page .screen.parallax .characters .character {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.vertical-scroll-page .screen.parallax .characters .character .profile {
+  width: 120px;
+  height: 120px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.vertical-scroll-page .screen.parallax .characters .character .name {
+  font-family: "adobe-fangsong-std", serif;
+  letter-spacing: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 0 6px 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  border-top: solid 8px black;
+  border-bottom: solid 8px black;
+  display: inline-block;
+  margin: auto auto 18px 10px;
+}
+.vertical-scroll-page .screen.parallax .characters .character.tang .profile {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/tang.png);
+}
+.vertical-scroll-page .screen.parallax .characters .character.sun .profile {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sun.png);
+}
+.vertical-scroll-page .screen.parallax .characters .character.zhu {
+  margin-left: 183px;
+}
+.vertical-scroll-page .screen.parallax .characters .character.zhu .profile {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/zhu.png);
+}
+.vertical-scroll-page .screen.parallax .characters .character.sha .profile {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sha.png);
+}
+.vertical-scroll-page .screen.parallax h1, .vertical-scroll-page .screen.parallax h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  height: 100%;
+  line-height: 1.2;
+  font-weight: 300;
+  float: right;
+  padding-top: 50px;
+}
+.vertical-scroll-page .screen.parallax h1 {
+  font-size: 70px;
+}
+.vertical-scroll-page .screen.parallax h2 {
+  font-size: 55px;
+}
+.vertical-scroll-page .screen.parallax .lower-right {
+  text-align: right;
+  float: left;
+  padding-top: 0;
+  padding-bottom: 300px;
+  box-sizing: border-box;
+}
+.vertical-scroll-page .screen.description {
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media only screen and (min-height: 800px) {
+  .vertical-scroll-page .screen.description {
+    padding: 50px;
+  }
+}
+.vertical-scroll-page .screen.description .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.vertical-scroll-page .screen.description .side.red {
+  color: #E74C3C;
+}
+.vertical-scroll-page .screen.description .side.blue {
+  color: #3498DB;
+}
+.vertical-scroll-page .screen.description h1, .vertical-scroll-page .screen.description p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 1.2;
+  float: right;
+  height: 100%;
+  letter-spacing: 0.06em;
+}
+.vertical-scroll-page .screen.description h1 {
+  font-size: 60px;
+  font-weight: 100;
+  white-space: nowrap;
+  margin: 0 40px 0 20px;
+}
+.vertical-scroll-page .screen.description p {
+  font-family: "adobe-fangsong-std", serif;
+  font-size: 30px;
+  line-height: 60px;
+}
+@-webkit-keyframes change-forward {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center 3240px;
+  }
+  100% {
+    background-position: center 6480px;
+  }
+}
+@keyframes change-forward {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center 3240px;
+  }
+  100% {
+    background-position: center 6480px;
+  }
+}
+@-webkit-keyframes change-backward {
+  0% {
+    background-position: center 6480px;
+  }
+  50% {
+    background-position: center 3240px;
+  }
+  100% {
+    background-position: center 0;
+  }
+}
+@keyframes change-backward {
+  0% {
+    background-position: center 6480px;
+  }
+  50% {
+    background-position: center 3240px;
+  }
+  100% {
+    background-position: center 0;
+  }
+}
+.vertical-scroll-page .screen.change {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row-reverse nowrap;
+      flex-flow: row-reverse nowrap;
+  background-color: black;
+  padding: 0 20px;
+}
+.vertical-scroll-page .screen.change .center {
+  color: white;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  letter-spacing: 4px;
+  line-height: 120px;
+  text-align: center;
+  border-left: solid 20px #000;
+  border-right: solid 20px #000;
+}
+.vertical-scroll-page .screen.change .end {
+  text-align: center;
+  font-size: 40px;
+  line-height: 80px;
+  color: white;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-right: 40px;
+  padding-left: 100px;
+}
+.vertical-scroll-page .screen.change .c5 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c5.svg) repeat-y;
+  -webkit-animation-name: change-backward;
+          animation-name: change-backward;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  width: 18px;
+}
+.vertical-scroll-page .screen.change .c4 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c4.svg) repeat-y;
+  -webkit-animation-name: change-forward;
+          animation-name: change-forward;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  width: 36px;
+}
+.vertical-scroll-page .screen.change .c3 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c3.svg) repeat-y;
+  -webkit-animation-name: change-backward;
+          animation-name: change-backward;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  width: 72px;
+}
+.vertical-scroll-page .screen.change .c2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c2.svg) repeat-y;
+  -webkit-animation-name: change-forward;
+          animation-name: change-forward;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  width: 108px;
+}
+.vertical-scroll-page .screen.change .c1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c1.svg) repeat-y;
+  -webkit-animation-name: change-backward;
+          animation-name: change-backward;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  width: 144px;
+}
+.vertical-scroll-page .screen.change .c1, .vertical-scroll-page .screen.change .c2, .vertical-scroll-page .screen.change .c3, .vertical-scroll-page .screen.change .c4, .vertical-scroll-page .screen.change .c5, .vertical-scroll-page .screen.change .p1, .vertical-scroll-page .screen.change .p2, .vertical-scroll-page .screen.change .p3, .vertical-scroll-page .screen.change .p4, .vertical-scroll-page .screen.change .p5 {
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.vertical-scroll-page .screen.change .c1:hover, .vertical-scroll-page .screen.change .c2:hover, .vertical-scroll-page .screen.change .c3:hover, .vertical-scroll-page .screen.change .c4:hover, .vertical-scroll-page .screen.change .c5:hover, .vertical-scroll-page .screen.change .p1:hover, .vertical-scroll-page .screen.change .p2:hover, .vertical-scroll-page .screen.change .p3:hover, .vertical-scroll-page .screen.change .p4:hover, .vertical-scroll-page .screen.change .p5:hover {
+  cursor: pointer;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.vertical-scroll-page .screen.change .p1 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p1.svg) repeat-y;
+  -webkit-animation-name: change-forward;
+          animation-name: change-forward;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  width: 144px;
+}
+.vertical-scroll-page .screen.change .p2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p2.svg) repeat-y;
+  -webkit-animation-name: change-backward;
+          animation-name: change-backward;
+  -webkit-animation-duration: 25s;
+          animation-duration: 25s;
+  width: 108px;
+}
+.vertical-scroll-page .screen.change .p3 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p3.svg) repeat-y;
+  -webkit-animation-name: change-forward;
+          animation-name: change-forward;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  width: 72px;
+}
+.vertical-scroll-page .screen.change .p4 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p4.svg) repeat-y;
+  -webkit-animation-name: change-backward;
+          animation-name: change-backward;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  width: 36px;
+}
+.vertical-scroll-page .screen.change .p5 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p5.svg) repeat-y;
+  -webkit-animation-name: change-forward;
+          animation-name: change-forward;
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+  width: 18px;
+}
