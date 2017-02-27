@@ -1,3 +1,1 @@
-# About this project
-
- 
+# vertical-rl.com
