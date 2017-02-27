@@ -230,7 +230,7 @@ body {
           transform: translate3d(calc( ( var(--mouse-x, 0.5) - 1 ) * 20px), calc( ( var(--mouse-y, 0.5) - 1 ) * 20px), 0px);
   width: 334px;
   height: 249px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/back.png");
+  background-image: url("/assets/back.png");
 }
 .vertical-scroll-page .screen.parallax .pictures .middle {
   top: 177px;
@@ -239,7 +239,7 @@ body {
           transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 10px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 10px), 0px);
   width: 629px;
   height: 424px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/middle.png");
+  background-image: url("/assets/middle.png");
 }
 .vertical-scroll-page .screen.parallax .pictures .front {
   top: 408px;
@@ -248,7 +248,7 @@ body {
           transform: translate3d(calc( 0px - ( var(--mouse-x, 0.5) - 1 ) * 40px), calc( 0px - ( var(--mouse-y, 0.5) - 1 ) * 40px), 0px);
   width: 401px;
   height: 384px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/front.png");
+  background-image: url("/assets/front.png");
 }
 .vertical-scroll-page .screen.parallax .characters {
   position: absolute;
@@ -285,19 +285,19 @@ body {
   margin: auto auto 18px 10px;
 }
 .vertical-scroll-page .screen.parallax .characters .character.tang .profile {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/tang.png);
+  background-image: url(/assets/tang.png);
 }
 .vertical-scroll-page .screen.parallax .characters .character.sun .profile {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sun.png);
+  background-image: url(/assets/sun.png);
 }
 .vertical-scroll-page .screen.parallax .characters .character.zhu {
   margin-left: 183px;
 }
 .vertical-scroll-page .screen.parallax .characters .character.zhu .profile {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/zhu.png);
+  background-image: url(/assets/zhu.png);
 }
 .vertical-scroll-page .screen.parallax .characters .character.sha .profile {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sha.png);
+  background-image: url(/assets/sha.png);
 }
 .vertical-scroll-page .screen.parallax h1, .vertical-scroll-page .screen.parallax h2 {
   -webkit-writing-mode: vertical-rl;
@@ -456,7 +456,7 @@ body {
   padding-left: 100px;
 }
 .vertical-scroll-page .screen.change .c5 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c5.svg) repeat-y;
+  background: url(/assets/c5.svg) repeat-y;
   -webkit-animation-name: change-backward;
           animation-name: change-backward;
   -webkit-animation-duration: 24s;
@@ -464,7 +464,7 @@ body {
   width: 18px;
 }
 .vertical-scroll-page .screen.change .c4 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c4.svg) repeat-y;
+  background: url(/assets/c4.svg) repeat-y;
   -webkit-animation-name: change-forward;
           animation-name: change-forward;
   -webkit-animation-duration: 15s;
@@ -472,7 +472,7 @@ body {
   width: 36px;
 }
 .vertical-scroll-page .screen.change .c3 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c3.svg) repeat-y;
+  background: url(/assets/c3.svg) repeat-y;
   -webkit-animation-name: change-backward;
           animation-name: change-backward;
   -webkit-animation-duration: 20s;
@@ -480,7 +480,7 @@ body {
   width: 72px;
 }
 .vertical-scroll-page .screen.change .c2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c2.svg) repeat-y;
+  background: url(/assets/c2.svg) repeat-y;
   -webkit-animation-name: change-forward;
           animation-name: change-forward;
   -webkit-animation-duration: 25s;
@@ -488,7 +488,7 @@ body {
   width: 108px;
 }
 .vertical-scroll-page .screen.change .c1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c1.svg) repeat-y;
+  background: url(/assets/c1.svg) repeat-y;
   -webkit-animation-name: change-backward;
           animation-name: change-backward;
   -webkit-animation-duration: 25s;
@@ -509,7 +509,7 @@ body {
           animation-play-state: paused;
 }
 .vertical-scroll-page .screen.change .p1 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p1.svg) repeat-y;
+  background: url(/assets/p1.svg) repeat-y;
   -webkit-animation-name: change-forward;
           animation-name: change-forward;
   -webkit-animation-duration: 25s;
@@ -517,7 +517,7 @@ body {
   width: 144px;
 }
 .vertical-scroll-page .screen.change .p2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p2.svg) repeat-y;
+  background: url(/assets/p2.svg) repeat-y;
   -webkit-animation-name: change-backward;
           animation-name: change-backward;
   -webkit-animation-duration: 25s;
@@ -525,7 +525,7 @@ body {
   width: 108px;
 }
 .vertical-scroll-page .screen.change .p3 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p3.svg) repeat-y;
+  background: url(/assets/p3.svg) repeat-y;
   -webkit-animation-name: change-forward;
           animation-name: change-forward;
   -webkit-animation-duration: 20s;
@@ -533,7 +533,7 @@ body {
   width: 72px;
 }
 .vertical-scroll-page .screen.change .p4 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p4.svg) repeat-y;
+  background: url(/assets/p4.svg) repeat-y;
   -webkit-animation-name: change-backward;
           animation-name: change-backward;
   -webkit-animation-duration: 15s;
@@ -541,7 +541,7 @@ body {
   width: 36px;
 }
 .vertical-scroll-page .screen.change .p5 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p5.svg) repeat-y;
+  background: url(/assets/p5.svg) repeat-y;
   -webkit-animation-name: change-forward;
           animation-name: change-forward;
   -webkit-animation-duration: 24s;

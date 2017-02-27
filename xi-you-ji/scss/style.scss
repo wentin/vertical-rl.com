@@ -186,7 +186,7 @@ body {
           0px);
         width: 334px;
         height: 249px;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/back.png');
+        background-image: url('/assets/back.png');
       }
 
       .middle {
@@ -198,7 +198,7 @@ body {
           0px);
         width: 629px;
         height: 424px;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/middle.png');
+        background-image: url('/assets/middle.png');
       }
 
       .front {
@@ -210,7 +210,7 @@ body {
           0px);
         width: 401px;
         height: 384px;
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/front.png');
+        background-image: url('/assets/front.png');
       }
     }
     .characters {
@@ -244,19 +244,19 @@ body {
           margin: auto auto 18px 10px;
         }
         &.tang .profile {
-          background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/tang.png);
+          background-image: url(/assets/tang.png);
         }
         &.sun .profile {
-          background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sun.png);
+          background-image: url(/assets/sun.png);
         }
         &.zhu {
           margin-left: 183px;
         }
         &.zhu .profile {
-          background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/zhu.png);
+          background-image: url(/assets/zhu.png);
         }
         &.sha .profile {
-          background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/sha.png);
+          background-image: url(/assets/sha.png);
         }
       }
     }
@@ -383,35 +383,35 @@ body {
       padding-left: 100px;
     }
     .c5 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c5.svg) repeat-y; 
+      background: url(/assets/c5.svg) repeat-y; 
       animation-name: change-backward;
       animation-duration: 24s;
       width: 18px;
       // filter: blur(3px);
     }
     .c4 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c4.svg) repeat-y; 
+      background: url(/assets/c4.svg) repeat-y; 
       animation-name: change-forward;
       animation-duration: 15s;
       width: 36px;
       // filter: blur(3px);
     }
     .c3 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c3.svg) repeat-y;
+      background: url(/assets/c3.svg) repeat-y;
       animation-name: change-backward;
       animation-duration: 20s;
       width: 72px;
       // filter: blur(2px);
     }
     .c2 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c2.svg) repeat-y;
+      background: url(/assets/c2.svg) repeat-y;
       animation-name: change-forward;
       animation-duration: 25s;
       width: 108px;
       // filter: blur(2px);
     }
     .c1 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/c1.svg) repeat-y;
+      background: url(/assets/c1.svg) repeat-y;
       animation-name: change-backward;
       animation-duration: 25s;
       width: 144px;
@@ -428,34 +428,34 @@ body {
       }
     }
     .p1 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p1.svg) repeat-y;
+      background: url(/assets/p1.svg) repeat-y;
       animation-name: change-forward;
       animation-duration: 25s;
       width: 144px;
     }
     .p2 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p2.svg) repeat-y;
+      background: url(/assets/p2.svg) repeat-y;
       animation-name: change-backward;
       animation-duration: 25s;
       width: 108px;
       // filter: blur(2px);
     }
     .p3 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p3.svg) repeat-y;
+      background: url(/assets/p3.svg) repeat-y;
       animation-name: change-forward;
       animation-duration: 20s;
       width: 72px;
       // filter: blur(2px);
     }
     .p4 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p4.svg) repeat-y; 
+      background: url(/assets/p4.svg) repeat-y; 
       animation-name: change-backward;
       animation-duration: 15s;
       width: 36px;
       // filter: blur(3px);
     }
     .p5 {
-      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/113726/p5.svg) repeat-y; 
+      background: url(/assets/p5.svg) repeat-y; 
       animation-name: change-forward;
       animation-duration: 24s;
       width: 18px;
