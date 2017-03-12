@@ -1,0 +1,180 @@
+body {
+  font-family: "adobe-kaiti-std", serif;
+  font-size: 16px;
+  line-height: 32px;
+  overflow-y: hidden; }
+
+.vertical-scroll-page {
+  height: 100vh;
+  display: inline-flex;
+  flex-flow: row-reverse nowrap; }
+  .vertical-scroll-page .screen.cover {
+    width: 70vw;
+    min-width: 720px;
+    flex-shrink: 0;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: #3F30D7;
+    border-left: solid 2px white;
+    color: white; }
+    .vertical-scroll-page .screen.cover .title {
+      writing-mode: vertical-rl;
+      font-size: 110px;
+      line-height: 220px;
+      top: 60px;
+      bottom: 60px;
+      position: absolute;
+      left: 0px;
+      right: 0;
+      width: 220px;
+      margin: auto;
+      border: solid 6px white;
+      text-align: center;
+      letter-spacing: 20px;
+      padding-top: 26px; }
+      .vertical-scroll-page .screen.cover .title span {
+        position: absolute;
+        height: 110px;
+        top: 0;
+        right: -340px;
+        line-height: 450px; }
+      .vertical-scroll-page .screen.cover .title h4 {
+        position: absolute;
+        bottom: -10px;
+        font-size: 34px;
+        line-height: 50px;
+        width: 50px;
+        letter-spacing: 2px; }
+        .vertical-scroll-page .screen.cover .title h4.author {
+          right: -140px; }
+        .vertical-scroll-page .screen.cover .title h4.time {
+          left: -140px; }
+  .vertical-scroll-page .screen.summary {
+    width: 30vw;
+    min-width: 200px;
+    border-top: solid 60px #3F30D7;
+    border-bottom: solid 60px #3F30D7;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: #3F30D7;
+    color: white;
+    font-family: "adobe-fangsong-std", serif;
+    display: flex;
+    flex-shrink: 0;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    .vertical-scroll-page .screen.summary p {
+      writing-mode: vertical-rl;
+      font-size: 22px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      height: 40vh; }
+  .vertical-scroll-page .screen.poetry {
+    background-color: #F4F478;
+    writing-mode: vertical-rl;
+    padding: 60px 100px;
+    font-size: 30px;
+    line-height: 1.6; }
+  .vertical-scroll-page .screen.role {
+    display: flex;
+    flex-flow: row-reverse nowrap; }
+    .vertical-scroll-page .screen.role.antagonist {
+      background-color: black;
+      color: #A2FAC6; }
+      .vertical-scroll-page .screen.role.antagonist .about {
+        border-color: currentColor; }
+      .vertical-scroll-page .screen.role.antagonist .info .row {
+        color: #A2FAC6; }
+        .vertical-scroll-page .screen.role.antagonist .info .row .th {
+          background-color: #A2FAC6;
+          color: black;
+          border-color: #A2FAC6; }
+      .vertical-scroll-page .screen.role.antagonist .info .row2 {
+        color: #FFC300; }
+        .vertical-scroll-page .screen.role.antagonist .info .row2 .th {
+          background-color: #FFC300;
+          color: black; }
+    .vertical-scroll-page .screen.role .about {
+      margin: 0 60px;
+      writing-mode: vertical-rl;
+      font-size: 30px;
+      line-height: 1.6;
+      border-top: solid 20px black;
+      border-bottom: solid 20px black;
+      padding: 40px 40px; }
+    .vertical-scroll-page .screen.role .info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: 100vh;
+      width: 400px;
+      box-sizing: border-box;
+      border: solid 60px transparent;
+      font-size: 25px;
+      font-family: "adobe-fangsong-std", serif;
+      letter-spacing: 0.4em; }
+      .vertical-scroll-page .screen.role .info .row {
+        width: 280px;
+        height: 100%;
+        color: #3F30D7;
+        border-top: solid 2px currentColor;
+        border-left: solid 2px currentColor;
+        box-sizing: border-box;
+        writing-mode: vertical-rl;
+        flex-grow: 2; }
+        .vertical-scroll-page .screen.role .info .row.color .th {
+          background-color: transparent;
+          color: currentColor; }
+        .vertical-scroll-page .screen.role .info .row .th {
+          width: 40px;
+          line-height: 36px;
+          background-color: #3F30D7;
+          color: white;
+          border-left: solid #3F30D7 2px;
+          border-right: solid #3F30D7 2px;
+          padding-top: 20px;
+          box-sizing: border-box; }
+        .vertical-scroll-page .screen.role .info .row .td {
+          padding-top: 20px;
+          width: 100px;
+          color: currentColor;
+          box-sizing: border-box;
+          display: table-cell;
+          vertical-align: middle; }
+      .vertical-scroll-page .screen.role .info .row2 {
+        width: 280px;
+        height: 100px;
+        flex-shrink: 0;
+        text-align: center;
+        color: #D73075; }
+        .vertical-scroll-page .screen.role .info .row2 .th {
+          height: 40px;
+          line-height: 40px;
+          background-color: #D73075;
+          color: white; }
+        .vertical-scroll-page .screen.role .info .row2 .td {
+          line-height: 60px;
+          color: currentColor;
+          border-left: solid 2px currentColor;
+          border-right: solid 2px currentColor;
+          border-bottom: solid 2px currentColor; }
+    .vertical-scroll-page .screen.role .illustration {
+      min-width: 200px;
+      border: solid 60px transparent; }
+      .vertical-scroll-page .screen.role .illustration img {
+        height: 100%;
+        width: auto; }
+  .vertical-scroll-page .screen.separator {
+    width: 0;
+    height: 0;
+    border-top: solid 50vh black;
+    border-left: solid 160px black;
+    border-bottom: solid 50vh transparent;
+    border-right: solid 160px transparent; }
+
+/*# sourceMappingURL=style.css.map */

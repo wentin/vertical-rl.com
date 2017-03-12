@@ -1,70 +1,25 @@
 $acumin: "acumin-pro-semi-condensed", sans-serif;
+$acumin-pro: "acumin-pro",sans-serif;
 $source-han: "source-han-sans-simplified-c", sans-serif;
 $fangsong: "adobe-fangsong-std", serif;
 $kaiti: "adobe-kaiti-std", serif;
 
-body {
-  font-family: $fangsong;
-}
-a {
-  font-size: 100px;
-  text-decoration: none;
-  display: block;
-  line-height: 33.3vh;
-  transition: all ease-out 0.2s;
-  color: black;
-  text-align: center;
-  cursor: pointer;
-}
-/* a#hong {
-  font-family: $fangsong;
-}
-a#xi {
-  font-family: $source-han;
-}
-a#shui {
-  font-family: $kaiti;
-} */
-a#hong:hover {
-  color: #EE009F;
-  background: white;
-}
-a#xi:hover {
-  color: #E74C3C;
-  background: black;
-}
-a#shui:hover {
-  color: #F4F478;
-  background:black;
-}
-.preview {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  transition: all ease 0.4s;
-  opacity: 0;
-  filter: blur(10px);
-}
+body#home {
+  .navigation {
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
 
-a:hover ~ .preview {
-  opacity: 1;
-  filter: blur(0px);
-}
+  @media screen and (min-width: 841px) {
+    .navigation {
+      .nav {
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        border-bottom: none;
+      }
+    }
+  }
 
-#hong:hover ~ .preview {
-  background-image: url(/assets/hong-screen.png);
-}
-
-#xi:hover ~ .preview {
-  background-image: url(/assets/xi-screen.png);
-}
-
-#shui:hover ~ .preview {
-  background-image: url(/assets/shui-screen.png);
 }

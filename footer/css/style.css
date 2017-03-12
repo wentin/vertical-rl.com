@@ -1,14 +1,7 @@
 @charset "UTF-8";
-@-webkit-keyframes svgDraw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
 @keyframes svgDraw {
   to {
-    stroke-dashoffset: 0;
-  }
-}
+    stroke-dashoffset: 0; } }
 .navigation {
   position: absolute;
   top: 10px;
@@ -20,136 +13,101 @@
   border-bottom: solid 1px black;
   color: black;
   width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-}
-.navigation .nav {
-  display: block;
-  box-sizing: border-box;
-  color: black;
-  width: 50%;
-  height: 50%;
-  border-top: solid 1px black;
-  border-left: solid 1px black;
-  position: relative;
-  overflow: hidden;
-}
-.navigation .nav#home {
-  -webkit-transition: color .6s ease;
-  transition: color .6s ease;
-}
-.navigation .nav#home h1.number {
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-.navigation .nav#home:hover {
-  background-color: black;
-  color: white;
-}
-.navigation .nav h1.number {
-  position: absolute;
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 300;
-  font-size: 44px;
-  line-height: 44px;
-  left: 25px;
-  top: 20px;
-}
-.navigation .nav h2.English {
-  position: absolute;
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 23px;
-  top: 36%;
-  left: 25px;
-  right: 66px;
-}
-.navigation .nav h2.Chinese {
-  position: absolute;
-  font-family: "adobe-kaiti-std", serif;
-  font-size: 44px;
-  letter-spacing: 2px;
-  line-height: 46px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  top: 36%;
-  right: 20px;
-  height: 64%;
-}
-.navigation .nav h2.Chinese:after {
-  content: "←";
-  font-family: "acumin-pro", sans-serif;
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-}
-.navigation .nav svg {
-  position: absolute;
-  top: calc(36% + 56px);
-  left: 20px;
-  height: calc(64% - 36px);
-  width: auto;
-  opacity: 0.4;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
-}
-.navigation .nav svg path,
-.navigation .nav svg polyline,
-.navigation .nav svg polygon {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1001;
-}
-.navigation .nav:hover {
-  cursor: pointer;
-}
-.navigation .nav:hover svg {
-  opacity: 1;
-}
-.navigation .nav:hover svg path,
-.navigation .nav:hover svg polyline,
-.navigation .nav:hover svg polygon {
-  -webkit-animation: svgDraw 5s ease forwards;
-          animation: svgDraw 5s ease forwards;
-}
-@media screen and (min-height: 621px) and (max-height: 750px) {
-  .navigation .nav h1.number {
-    top: 10px;
-  }
-  .navigation .nav h2.English {
-    top: 80px;
-  }
-  .navigation .nav h2.Chinese {
-    top: 80px;
-    height: calc(100% - 80px);
-  }
-  .navigation .nav svg {
-    top: 149px;
-    left: 20px;
-    height: calc(100% - 126px);
-  }
-}
-@media screen and (max-height: 619px) {
-  .navigation {
-    width: 1000px;
-  }
+  flex-direction: column;
+  flex-wrap: wrap-reverse; }
   .navigation .nav {
-    width: 25%;
+    display: block;
     box-sizing: border-box;
-    height: 100%;
-    border-bottom: none;
-  }
-}
+    color: black;
+    width: 50%;
+    height: 50%;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    position: relative;
+    overflow: hidden; }
+    .navigation .nav#home {
+      transition: color .6s ease; }
+      .navigation .nav#home h1.number {
+        font-family: "acumin-pro", sans-serif;
+        font-weight: 600;
+        font-size: 20px; }
+      .navigation .nav#home:hover {
+        background-color: black;
+        color: white; }
+    .navigation .nav h1.number {
+      position: absolute;
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 44px;
+      left: 25px;
+      top: 20px; }
+    .navigation .nav h2.English {
+      position: absolute;
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 21px;
+      line-height: 23px;
+      top: 36%;
+      left: 25px;
+      right: 66px; }
+    .navigation .nav h2.Chinese {
+      position: absolute;
+      font-family: "adobe-kaiti-std", serif;
+      font-size: 44px;
+      letter-spacing: 2px;
+      line-height: 46px;
+      writing-mode: vertical-rl;
+      top: 36%;
+      right: 20px;
+      height: 64%; }
+      .navigation .nav h2.Chinese:after {
+        content: "←";
+        font-family: "acumin-pro", sans-serif;
+        writing-mode: horizontal-tb;
+        position: absolute;
+        left: 0;
+        bottom: 10px; }
+    .navigation .nav svg {
+      position: absolute;
+      top: calc(36% + 56px);
+      left: 20px;
+      height: calc(64% - 36px);
+      width: auto;
+      max-width: 100%;
+      transition: all 1s linear; }
+      .navigation .nav svg path,
+      .navigation .nav svg polyline,
+      .navigation .nav svg polygon {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1001; }
+    .navigation .nav:hover {
+      cursor: pointer; }
+      .navigation .nav:hover svg path,
+      .navigation .nav:hover svg polyline,
+      .navigation .nav:hover svg polygon {
+        animation: svgDraw 5s ease forwards; }
+  @media screen and (min-height: 621px) and (max-height: 750px) {
+    .navigation .nav h1.number {
+      top: 10px; }
+    .navigation .nav h2.English {
+      top: 80px; }
+    .navigation .nav h2.Chinese {
+      top: 80px;
+      height: calc(100% - 80px); }
+    .navigation .nav svg {
+      top: 149px;
+      left: 20px;
+      height: calc(100% - 126px); } }
+  @media screen and (max-height: 619px) {
+    .navigation {
+      width: 1000px; }
+      .navigation .nav {
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        border-bottom: none; } }
+
+/*# sourceMappingURL=style.css.map */

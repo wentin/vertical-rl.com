@@ -88,7 +88,7 @@ $white: white;
       left: 20px;
       height: calc(64% - 36px);
       width: auto;
-      opacity: 0.4;
+      max-width: 100%;
       transition: all 1s linear;
       path,
       polyline,
@@ -100,7 +100,6 @@ $white: white;
     &:hover {
       cursor: pointer;
       svg{
-        opacity: 1;
         path,
         polyline,
         polygon {
