@@ -89,25 +89,26 @@
       .navigation .nav:hover svg polyline,
       .navigation .nav:hover svg polygon {
         animation: svgDraw 5s ease forwards; }
-  @media screen and (min-height: 621px) and (max-height: 750px) {
-    .navigation .nav h1.number {
-      top: 10px; }
-    .navigation .nav h2.English {
-      top: 80px; }
-    .navigation .nav h2.Chinese {
-      top: 80px;
-      height: calc(100% - 80px); }
-    .navigation .nav svg {
-      top: 149px;
-      left: 20px;
-      height: calc(100% - 126px); } }
-  @media screen and (max-height: 619px) {
-    .navigation {
-      width: 1000px; }
-      .navigation .nav {
-        width: 25%;
-        box-sizing: border-box;
-        height: 100%;
-        border-bottom: none; } }
+
+@media screen and (max-height: 619px) {
+  .navigation {
+    width: 1000px; }
+    .navigation .nav {
+      width: 25%;
+      box-sizing: border-box;
+      height: 100%;
+      border-bottom: none; } }
+@media screen and (min-height: 621px) and (max-height: 750px) {
+  body:not(#home) .navigation .nav h1.number {
+    top: 10px; }
+  body:not(#home) .navigation .nav h2.English {
+    top: 80px; }
+  body:not(#home) .navigation .nav h2.Chinese {
+    top: 80px;
+    height: calc(100% - 80px); }
+  body:not(#home) .navigation .nav svg {
+    top: 149px;
+    left: 20px;
+    height: calc(100% - 126px); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+body#hong {
+  .navigation {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 841px) {
+    .navigation {
+      .nav {
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        border-bottom: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    .navigation {
+      height: 840px;
+    }
+  }
+}
