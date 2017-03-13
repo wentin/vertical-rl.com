@@ -5,6 +5,12 @@ body {
   overflow-y: hidden;
 }
 
+body#xi .navigation {
+  position: relative;
+  height: calc(100% - 20px);
+  margin: 0 100px;
+}
+
 .vertical-scroll-page {
   height: 100vh;
   display: -webkit-inline-box;
@@ -169,9 +175,7 @@ body {
           transform: rotate(15deg);
 }
 .vertical-scroll-page .screen.intro .author {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   line-height: 1.2;
   text-align: center;
   height: 100%;
@@ -220,7 +224,7 @@ body {
   position: absolute;
   background-repeat: no-repeat;
   -webkit-transition: all 100ms ease;
-  transition: all 100ms ease;
+          transition: all 100ms ease;
   background-size: cover;
 }
 .vertical-scroll-page .screen.parallax .pictures .back {
@@ -276,9 +280,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   padding: 10px 0 6px 0;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   border-top: solid 8px black;
   border-bottom: solid 8px black;
   display: inline-block;
@@ -300,9 +302,7 @@ body {
   background-image: url(/assets/sha.png);
 }
 .vertical-scroll-page .screen.parallax h1, .vertical-scroll-page .screen.parallax h2 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   height: 100%;
   line-height: 1.2;
   font-weight: 300;
@@ -356,9 +356,7 @@ body {
   color: #3498DB;
 }
 .vertical-scroll-page .screen.description h1, .vertical-scroll-page .screen.description p {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   line-height: 1.2;
   float: right;
   height: 100%;
@@ -432,9 +430,7 @@ body {
 }
 .vertical-scroll-page .screen.change .center {
   color: white;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   background-color: #fff;
   color: #000;
   font-size: 30px;
@@ -449,9 +445,7 @@ body {
   font-size: 40px;
   line-height: 80px;
   color: white;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   padding-right: 40px;
   padding-left: 100px;
 }
@@ -497,7 +491,7 @@ body {
 }
 .vertical-scroll-page .screen.change .c1, .vertical-scroll-page .screen.change .c2, .vertical-scroll-page .screen.change .c3, .vertical-scroll-page .screen.change .c4, .vertical-scroll-page .screen.change .c5, .vertical-scroll-page .screen.change .p1, .vertical-scroll-page .screen.change .p2, .vertical-scroll-page .screen.change .p3, .vertical-scroll-page .screen.change .p4, .vertical-scroll-page .screen.change .p5 {
   -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
+          transition: all .1s ease-in;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -548,3 +542,9 @@ body {
           animation-duration: 24s;
   width: 18px;
 }
+
+svg path {
+  vector-effect: non-scaling-stroke;
+}
+
+/*# sourceMappingURL=style.css.map */

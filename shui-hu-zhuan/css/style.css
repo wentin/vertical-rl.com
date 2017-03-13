@@ -5,6 +5,12 @@ body {
   overflow-y: hidden;
 }
 
+body#shui .navigation {
+  position: relative;
+  height: calc(100% - 20px);
+  margin: 0 100px;
+}
+
 .vertical-scroll-page {
   height: 100vh;
   display: -webkit-inline-box;
@@ -27,9 +33,7 @@ body {
   color: white;
 }
 .vertical-scroll-page .screen.cover .title {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-size: 110px;
   line-height: 220px;
   top: 60px;
@@ -91,9 +95,7 @@ body {
           align-items: center;
 }
 .vertical-scroll-page .screen.summary p {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-size: 22px;
   line-height: 40px;
   letter-spacing: 2px;
@@ -101,9 +103,7 @@ body {
 }
 .vertical-scroll-page .screen.poetry {
   background-color: #F4F478;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   padding: 60px 100px;
   font-size: 30px;
   line-height: 1.6;
@@ -139,9 +139,7 @@ body {
 }
 .vertical-scroll-page .screen.role .about {
   margin: 0 60px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-size: 30px;
   line-height: 1.6;
   border-top: solid 20px black;
@@ -176,9 +174,7 @@ body {
   border-top: solid 2px currentColor;
   border-left: solid 2px currentColor;
   box-sizing: border-box;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -242,3 +238,5 @@ body {
   border-bottom: solid 50vh transparent;
   border-right: solid 160px transparent;
 }
+
+/*# sourceMappingURL=style.css.map */

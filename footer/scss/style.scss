@@ -93,6 +93,7 @@ $white: white;
       path,
       polyline,
       polygon {
+        vector-effect: non-scaling-stroke;
         stroke-dasharray: 1000;
         stroke-dashoffset: 1001;
       }

@@ -16,6 +16,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body#hong .navigation {
+  position: relative;
+  width: 95%;
+  height: 600px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 841px) {
+  body#hong .navigation .nav {
+    width: 25%;
+    box-sizing: border-box;
+    height: 100%;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  body#hong .navigation {
+    height: 840px;
+  }
+}
+
 .screen#music {
   background-color: #fff;
   background-image: -webkit-linear-gradient(225deg, #EB139E 0%, #4305FF 100%);
@@ -162,14 +182,14 @@ body {
   display: inline-block;
   position: relative;
   -webkit-transition: all ease 0.9s;
-  transition: all ease 0.9s;
+          transition: all ease 0.9s;
 }
 .screen#music .note:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
   color: #EE009F;
   -webkit-transition: none;
-  transition: none;
+          transition: none;
   cursor: pointer;
 }
 .screen#music .note .word {
@@ -277,9 +297,7 @@ body {
           justify-content: center;
 }
 .screen#lines .line {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   height: 540px;
   width: 30px;
   line-height: 30px;
@@ -370,3 +388,5 @@ body {
   background-color: #EE009F;
   margin: 80px auto 0 auto;
 }
+
+/*# sourceMappingURL=style.css.map */

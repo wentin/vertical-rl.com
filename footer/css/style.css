@@ -43,7 +43,7 @@
 }
 .navigation .nav#home {
   -webkit-transition: color .6s ease;
-  transition: color .6s ease;
+          transition: color .6s ease;
 }
 .navigation .nav#home h1.number {
   font-family: "acumin-pro", sans-serif;
@@ -80,9 +80,7 @@
   font-size: 44px;
   letter-spacing: 2px;
   line-height: 46px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   top: 36%;
   right: 20px;
   height: 64%;
@@ -90,9 +88,7 @@
 .navigation .nav h2.Chinese:after {
   content: "←";
   font-family: "acumin-pro", sans-serif;
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
+  writing-mode: horizontal-tb;
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -105,11 +101,12 @@
   width: auto;
   max-width: 100%;
   -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+          transition: all 1s linear;
 }
 .navigation .nav svg path,
 .navigation .nav svg polyline,
 .navigation .nav svg polygon {
+  vector-effect: non-scaling-stroke;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1001;
 }
@@ -151,3 +148,5 @@
     height: calc(100% - 126px);
   }
 }
+
+/*# sourceMappingURL=style.css.map */

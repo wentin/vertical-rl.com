@@ -7,7 +7,11 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'css/style.css': 'scss/style.scss'
+                    'css/style.css': 'scss/style.scss',
+                    'xi-you-ji/css/style.css': 'xi-you-ji/scss/style.scss',
+                    'hong-lou-meng/css/style.css': 'hong-lou-meng/scss/style.scss',
+                    'shui-hu-zhuan/css/style.css': 'shui-hu-zhuan/scss/style.scss',
+                    'footer/css/style.css': 'footer/scss/style.scss'
                 }
             }
         },
@@ -17,13 +21,17 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/style.css': 'css/style.css'
+                    'css/style.css': 'css/style.css',
+                    'xi-you-ji/css/style.css': 'xi-you-ji/css/style.css',
+                    'hong-lou-meng/css/style.css': 'hong-lou-meng/css/style.css',
+                    'shui-hu-zhuan/css/style.css': 'shui-hu-zhuan/css/style.css',
+                    'footer/css/style.css': 'footer/css/style.css'
                 }
             }
         },
         watch: {
             css: {
-                files: 'scss/*.scss',
+                files: '**/*.scss',
                 tasks: ['sass', 'autoprefixer']
             },
             options: {

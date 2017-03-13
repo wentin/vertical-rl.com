@@ -22,6 +22,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body#hong {
+  .navigation {
+    position: relative;
+    width: 95%;
+    height: 600px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 841px) {
+    .navigation {
+      .nav {
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        border-bottom: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    .navigation {
+      height: 840px;
+    }
+  }
+}
+
 .screen#music {
   background-color: #fff;
   background-image: linear-gradient(-135deg, #EB139E 0%, #4305FF 100%);

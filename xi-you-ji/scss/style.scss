@@ -8,6 +8,15 @@ body {
   overflow-y: hidden;
 }
 
+body#xi {
+  .navigation {
+    position: relative;
+    height: calc(100% - 20px);
+    margin: 0 100px;
+  }
+}
+
+
 .vertical-scroll-page {
   height: 100vh;
   display: inline-flex;
@@ -462,4 +471,8 @@ body {
       // filter: blur(3px);
     }
   }
+}
+
+svg path {
+  vector-effect: non-scaling-stroke;
 }
