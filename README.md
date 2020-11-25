@@ -1,1 +1,1 @@
-# vertical-rl.com
+# http://vertical.wentin.net/
